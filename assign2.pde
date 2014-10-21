@@ -229,9 +229,12 @@ void keyPressed() {
       }
     }
     if (key == ENTER){
+      if (gameState == GAME_RUN){
+      }else{
       gameState = GAME_RUN;
       life=3;
       frogX = frogInitX;
       frogY = frogInitY;
+      }
     }
 }
